@@ -107,6 +107,9 @@ class OpenPIGPT2Predictor:
                 num_return_sequences=num_return_sequences,
                 output_scores = True
             )
+            print(out)
+            import pdb
+            pdb.set_trace()
 
             for out_seq in out:
                 text = self.tokenizer.decode(out_seq, clean_up_tokenization_spaces=True)
