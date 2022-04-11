@@ -101,10 +101,10 @@ class OpenPIGPT2Predictor:
                 input_ids=encoded_prompt,
                 max_length=min(1024,max_len + encoded_prompt.size(-1)),
                 # temperature=temperature,
-                top_k=top_k,
-                top_p=top_p,
-                do_sample=do_sample,
-                num_return_sequences=num_return_sequences,
+                # top_k=top_k,
+                # top_p=top_p,
+                # do_sample=do_sample,
+                # num_return_sequences=num_return_sequences,
                 return_dict_in_generate=True,
                 output_scores=True
             )
