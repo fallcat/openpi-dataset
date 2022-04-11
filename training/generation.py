@@ -105,6 +105,7 @@ class OpenPIGPT2Predictor:
                 top_p=top_p,
                 do_sample=do_sample,
                 num_return_sequences=num_return_sequences,
+                return_dict_in_generate=True,
                 output_scores = True
             )
             print(out)
